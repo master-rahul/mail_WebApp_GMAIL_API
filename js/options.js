@@ -126,7 +126,7 @@ function removeReciever(num) {
 }
 
 var YOUR_CLIENT_ID = '358956356096-0v8h0vu7alqn4cbe540v22mvt7mp7tg6.apps.googleusercontent.com';
-var YOUR_REDIRECT_URI = 'http://localhost:8000/options/';
+var YOUR_REDIRECT_URI = 'http://localhost:8000';
 
 function authorize() {
     var oauth2Endpoint = 'https://accounts.google.com/o/oauth2/v2/auth';    // Google OAuth 2.0 endpoint 
