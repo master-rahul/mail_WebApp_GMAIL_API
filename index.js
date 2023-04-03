@@ -35,19 +35,19 @@ app.use('/js', express.static(__dirname + '/js'));
 app.use(express.json());
 app.use(bodyParser.urlencoded({extended : false}));
 
-app.get('/', (request, response) => {
-    fs.readFile('./index.html' ,(error, data) => {
-        if(error) {
-            console.error('Error Reading home.html file', error);
-            return response.end('ERROR');
-        }
-        else {
-            return response.end(data);
-        }
-    });
-});
+// app.get('/', (request, response) => {
+//     fs.readFile('./index.html' ,(error, data) => {
+//         if(error) {
+//             console.error('Error Reading home.html file', error);
+//             return response.end('ERROR');
+//         }
+//         else {
+//             return response.end(data);
+//         }
+//     });
+// });
 
-app.get('/options', (request, response) => {
+app.get('/', (request, response) => {
     fs.readFile('./options.html', (error, data) => {
         if (error) {
             console.error('Error Reading home.html file', error);
